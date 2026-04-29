@@ -25,7 +25,7 @@ jobs:
 
             # Install deps
             sudo -E pkg install -y \
-                bash cmake cimg googletest ninja patchelf pkgconf
+                bash cmake cimg googletest ninja patchelf pkgconf wget
 
             # Run the build, skipping plugins as these aren't ready yet
             bash ci/build.sh --skip-plugins
